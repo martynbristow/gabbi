@@ -1,10 +1,6 @@
 before_script:
   - apt-get update -qq && apt-get upgrade -y -qq && apt-get install -y -qq python-pip
 
-stages:
-  - lint
-  - unittest
-
 lint:
   script:
     - pip install pylint
